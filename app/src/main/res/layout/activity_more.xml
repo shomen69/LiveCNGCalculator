@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_more_vertical_margin"
+    android:paddingLeft="@dimen/activity_more_horizontal_margin"
+    android:paddingRight="@dimen/activity_more_horizontal_margin"
+    android:paddingTop="@dimen/activity_more_vertical_margin"
+    tools:context="com.shomen.smn.livecngcalculator.MoreActivity"
+    android:background="#3284e8">
+
+    <Button
+        style="@style/st_act_tv_style"
+        android:background="@drawable/btn_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:id="@+id/ac_m_setting"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_above="@+id/ac_m_license"/>
+
+    <Button
+        style="@style/st_act_tv_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Google Map License"
+        android:background="@drawable/btn_state"
+        android:id="@+id/ac_m_license"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        style="@style/st_act_tv_style"
+        android:background="@drawable/btn_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:id="@+id/ac_m_about_us"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/ac_m_license"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        style="@style/tv_style_two"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/copyright"
+        android:id="@+id/cr_text_one"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Live CNG Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_setting">Setting</string>
+    <string name="title_activity_more">More</string>
+    <string name="DirectionApiKey">AIzaSyA75tLHUW04yFh5_vAYCpHBq45cQGERF4s</string>
+    <string name="drawer_open">OPEN</string>
+    <string name="drawer_close">CLOSE</string>
+    <string name="more"><u>MORE...</u></string>
+    <string name="copyright">Copyright @ 2016 shomen69@gmail.com</string>
+
+</resources>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingRight="10dp"
+    android:background="#3284e8"  >
+
+    <LinearLayout
+        android:id="@+id/dt_ll_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingPrefix"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/dt_ll_three">
+
+        <TextView
+            android:id="@+id/dt_tv_cost"
+            style="@style/tv_style"
+            android:layout_alignParentLeft="true"
+            android:text="Total Cost :"/>
+
+        <TextView
+            android:id="@+id/dt_tv_cost_in_tk"
+            style="@style/tv_style"
+            android:layout_marginLeft="5dp"
+            android:text="0.0" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/dt_ll_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="false"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            style="@style/tv_style"
+            android:id="@+id/dt_tv_distance"
+            android:text="Distance :" />
+
+        <TextView
+            android:id="@+id/dt_tv_km_in_text"
+            style="@style/tv_style"
+            android:layout_marginLeft="5dp"
+            android:text="0.0 km" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dt_ll_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/dt_ll_two">
+
+        <TextView
+            style="@style/tv_style"
+            android:id="@+id/dt_tv_waiting"
+            android:layout_alignParentLeft="true"
+            android:text="Waiting (min) : " />
+
+        <EditText
+            android:id="@+id/dt_et_waiting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:ems="2"
+            android:focusable="true"
+            android:gravity="right"
+            android:inputType="number"
+            android:text=""/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontPath="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:background="#3284e8"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/tv_style_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1347a8"
+        android:padding="7dp"
+        android:text="CNG Meter Calculator"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/textView"
+        android:scaleType="fitXY"
+        android:src="@drawable/cab" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView2"
+        android:fillViewport="true"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3284e8"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/dt_ll_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dt_ll_three"
+                    android:orientation="vertical"
+                    tools:ignore="MissingPrefix">
+
+                    <TextView
+                        android:id="@+id/dt_tv_cost"
+                        style="@style/tv_style_two"
+                        android:layout_alignParentLeft="true"
+                        android:text="Total Cost :" />
+
+                    <View
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/dt_tv_cost_in_tk"
+                        style="@style/tv_style_two"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:text="0.0 tk" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/dt_ll_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_distance"
+                        style="@style/tv_style_two"
+                        android:text="Distance :" />
+
+                    <View
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/dt_tv_km_in_text"
+                        style="@style/tv_style_two"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:text="00.00 km" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dt_ll_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dt_ll_two"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/dt_tv_waiting"
+                        style="@style/tv_style_two"
+                        android:layout_alignParentLeft="true"
+                        android:text="Waiting (min) : " />
+
+                    <View
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#ffffff" />
+
+                    <EditText
+                        android:id="@+id/dt_et_waiting"
+                        style="@style/tv_style_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:ems="3"
+                        android:focusable="true"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:text="0" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dt_ll_one"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/btn_state"
+                    android:text="Star Live Track"
+                    android:layout_marginBottom="10dp"
+                    style="@style/tv_style_two"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_btn_state"
+                    style="@style/tv_style_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Live Track"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@+id/button3"
+                    android:layout_toEndOf="@+id/button3"
+                    android:layout_alignBaseline="@+id/button3"
+                    android:layout_marginLeft="10dp" />
+
+                <Button
+                    android:id="@+id/btn_live_path_dist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Check Traveled Distance"
+                    style="@style/tv_style_two"
+                    android:background="@drawable/btn_state"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="15sp"
+                    android:layout_below="@+id/button3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more"
+                    android:id="@+id/tv_more"
+                    android:layout_below="@id/btn_live_path_dist"
+                    style="@style/tv_style_two"
+                    android:textSize="12sp"
+                    android:layout_margin="10dp"
+                    android:layout_centerHorizontal="true"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="106dp"
+        android:background="#5d90e7"
+        android:visibility="gone"></LinearLayout>
+
+</RelativeLayout>
+

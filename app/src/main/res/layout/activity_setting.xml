@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#3284e8"
+              android:layout_width="match_parent"
+              android:padding="10dp"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView2"
+        android:fillViewport="true"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3284e8"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/st_act_ll_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="MissingPrefix">
+
+                    <TextView
+                        android:id="@+id/dt_tv_cost"
+                        style="@style/st_act_tv_style"
+                        android:layout_alignParentLeft="true"
+                        android:text="Base Charge (TK)" />
+
+                    <View
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#ffffff" />
+
+                    <EditText
+                        style="@style/st_act_tv_style"
+                        android:id="@+id/et_b_charge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:ems="3"
+                        android:focusable="true"
+                        android:gravity="right"
+                        android:text="0"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/st_act_ll_two"
+                    android:layout_below="@+id/st_act_ll_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_distance"
+                        style="@style/st_act_tv_style"
+                        android:text="Base Distance (KM)" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#ffffff" />
+
+                    <EditText
+                        style="@style/st_act_tv_style"
+                        android:id="@+id/et_b_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:ems="3"
+                        android:focusable="true"
+                        android:gravity="right"
+                        android:text="0"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/st_act_ll_three"
+                    android:layout_below="@id/st_act_ll_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_dis"
+                        style="@style/st_act_tv_style"
+                        android:text="Per KM Charge (TK) :" />
+
+                    <View
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#ffffff" />
+
+                    <EditText
+                        style="@style/st_act_tv_style"
+                        android:id="@+id/et_per_km_charge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:ems="3"
+                        android:focusable="true"
+                        android:gravity="right"
+                        android:text="0"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/st_act_ll_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/st_act_ll_three"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/dt_tv_waiting"
+                        style="@style/st_act_tv_style"
+                        android:layout_alignParentLeft="true"
+                        android:text="Per Min Waiting Charge (TK)" />
+
+                    <View
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#ffffff" />
+
+                    <EditText
+                        style="@style/st_act_tv_style"
+                        android:id="@+id/et_per_min_w_charge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:ems="3"
+                        android:focusable="true"
+                        android:gravity="right"
+                        android:text="0"
+                        />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatButton
+                    style="@style/st_act_tv_style"
+                    android:layout_below="@id/st_act_ll_four"
+                    android:background="@drawable/btn_state"
+                    android:id="@+id/btn_set_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:padding="12dp"
+                    android:text="SET"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_more_vertical_margin"
+    android:paddingLeft="@dimen/activity_more_horizontal_margin"
+    android:paddingRight="@dimen/activity_more_horizontal_margin"
+    android:paddingTop="@dimen/activity_more_vertical_margin"
+    tools:context="com.shomen.smn.livecngcalculator.MoreActivity"
+    android:background="#3284e8">
+
+
+    <TextView
+        style="@style/tv_style_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Please Update your Google Play Service to use this app..."
+        android:id="@+id/textView2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
